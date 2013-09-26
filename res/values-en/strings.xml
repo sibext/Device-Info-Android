@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Device info</string>
+	<string name="app_chooser_title">Share via:</string>
+	
+	<string name="id_title">Serial Number:</string>
+	<string name="mac_adress_title">MAC:</string>
+	<string name="android_id_title">AndrodId:</string>
+	<string name="gps_title">Support gps:</string>
+		
+	<string name="id_subject">Serial Number</string>
+	<string name="mac_adress_subject">MAC</string>
+	<string name="android_id_subject">AndrodId</string>
+	<string name="encryptions">Algorithms:</string>
+	<string name="autofocus">Automatic focus:</string>
+	<string name="screen">Screen:</string>
+	<string name="sensors">Sensors:</string>
+	<string name="sensors_name">Name:</string>
+	
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+
+</resources>

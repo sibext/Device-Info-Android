@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_id" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_macadress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_id" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_androidid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_macadress" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_androidid" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_crypts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_gps" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_autofocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_crypts" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_sensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_autofocus" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_item_screen_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_item_sensors" >
+
+            <include layout="@layout/activity_main_item" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>

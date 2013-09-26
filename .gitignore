@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings
+.idea
+*.ipr
+*.iml
+*.iws
+target
+bin
+gen
+libs
+.DS_Store
+*.swp
+*.orig
+*~
+.directory
