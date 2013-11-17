@@ -21,14 +21,15 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/di"
-        android:label="@string/app_name" >
+        android:label="@string/di"
+        android:debuggable="false">
         <meta-data
             android:name="recipient_address"
             android:value="android@sibext.com" />
 
         <activity
             android:name=".activity.MainActivity"
-            android:label="Device information" >
+            android:label="@string/di" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

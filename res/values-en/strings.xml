@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Device info</string>
+	<string name="di">Device info</string>
 	<string name="app_chooser_title">Share via:</string>
 	
 	<string name="id_title">Serial Number:</string>
