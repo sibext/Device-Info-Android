@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="12"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,12 +14,18 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+   
     <application
+        android:allowBackup="true"
         android:icon="@drawable/di"
-        android:label="@string/app_name" 
-        android:allowBackup="true">
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="recipient_address"
+            android:value="android@sibext.com" />
+
         <activity
             android:name=".activity.MainActivity"
             android:label="Device information" >

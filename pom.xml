@@ -4,7 +4,7 @@
 
 	<groupId>com.sibext</groupId>
 	<artifactId>deviceinfo</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>apk</packaging>
 
 	<name>Device info</name>
@@ -17,8 +17,14 @@
 		<dependency>
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>
-			<version>4.0.1.2</version>
+			<version>4.1.1.4</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sibext.crashcatcher</groupId>
+			<artifactId>crashcatcher</artifactId>
+			<version>1.0.19</version>
+			<type>apklib</type>
 		</dependency>
 	</dependencies>
 
@@ -66,7 +72,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+ 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jarsigner-plugin</artifactId>

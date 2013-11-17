@@ -22,7 +22,6 @@ import java.security.Security;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -35,10 +34,11 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.sibext.android.activity.CrashCatcherActivity;
 import com.sibext.deviceinfo.R;
 import com.sibext.deviceinfo.utils.SystemHelper;
 
-public class MainActivity extends Activity {
+public class MainActivity extends CrashCatcherActivity {
 
 	private FrameLayout frameId;
 	private FrameLayout frameMacAdress;
@@ -273,7 +273,7 @@ public class MainActivity extends Activity {
 		} else {
 			sb.append("Density is neither HIGH, MEDIUM OR LOW. Density is " + String.valueOf(density));
 		}
-
+		sb.append("\nResource directory = ").append(getString(R.string.resource_dirictory));
 		TextView title = (TextView) frameScreen.findViewById(R.id.item_title);
 		TextView value = (TextView) frameScreen.findViewById(R.id.item_value);
 		title.setText(R.string.screen);
