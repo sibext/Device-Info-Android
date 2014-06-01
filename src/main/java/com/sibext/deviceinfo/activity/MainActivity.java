@@ -248,17 +248,23 @@ public class MainActivity extends CrashCatcherActivity {
 	private void setScreenInfo() {
 		StringBuilder sb = new StringBuilder();
 		// Determine screen size
-		if ((getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE) {
-			sb.append("Large screen; ");
-
-		} else if ((getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL) {
-			sb.append("Normal sized screen; ");
-
-		} else if ((getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL) {
-			sb.append("Small sized screen; ");
-		} else {
-			sb.append("Screen size is neither large, normal or small; ");
-		}
+		int sizeOfScreen = (getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK);
+		switch (sizeOfScreen) {
+        case Configuration.SCREENLAYOUT_SIZE_LARGE:
+            sb.append("Large screen; ");
+            break;
+        case Configuration.SCREENLAYOUT_SIZE_NORMAL:
+            sb.append("Normal screen; ");
+            break;
+        case Configuration.SCREENLAYOUT_SIZE_XLARGE:
+            sb.append("Extra large screen; ");
+            break;
+        case Configuration.SCREENLAYOUT_SIZE_SMALL:
+            sb.append("Small screen; ");
+            break;
+        default:
+            sb.append("Screen size is neither large, normal or small; ");
+        }
 		// Determine density
 		DisplayMetrics metrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -270,6 +276,10 @@ public class MainActivity extends CrashCatcherActivity {
 			sb.append("MEDIUM: Density is " + String.valueOf(density));
 		} else if (density == DisplayMetrics.DENSITY_LOW) {
 			sb.append("LOW: Density is " + String.valueOf(density));
+		} else if (density == DisplayMetrics.DENSITY_XHIGH) {
+		    sb.append("Extra HIGHT: Density is " + String.valueOf(density));
+		} else if (density == DisplayMetrics.DENSITY_XXHIGH) {
+		    sb.append("Double Extra HIGHT: Density is " + String.valueOf(density));
 		} else {
 			sb.append("Density is neither HIGH, MEDIUM OR LOW. Density is " + String.valueOf(density));
 		}

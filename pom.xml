@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>com.sibext.crashcatcher</groupId>
 			<artifactId>crashcatcher</artifactId>
-			<version>1.0.19</version>
+			<version>1.4.7</version>
 			<type>apklib</type>
 		</dependency>
 	</dependencies>
