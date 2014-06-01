@@ -4,7 +4,7 @@
 
 	<groupId>com.sibext</groupId>
 	<artifactId>deviceinfo</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>apk</packaging>
 
 	<name>Device info</name>
