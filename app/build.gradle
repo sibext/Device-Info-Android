@@ -9,6 +9,35 @@ android {
         minSdkVersion 12
         targetSdkVersion 22
     }
+    signingConfigs {
+        release {
+            String storeFileValue = 'filename';
+            String storePassValue = 'password';
+            String keyAliasValue = 'alias';
+            String keyPassValue = 'pass';
+            if(project.hasProperty("Sibext.properties")
+                    && new File(project.property("Sibext.properties")).exists()) {
+                Properties props = new Properties()
+                props.load(new FileInputStream(file(project.property("Sibext.properties"))))
+                storeFileValue = props['keystore'];
+                storePassValue = props['keystore.password'];
+                keyAliasValue = props['keyAlias'];
+                keyPassValue = props['keyPassword'];
+            }
+            storeFile file(storeFileValue)
+            storePassword storePassValue
+            keyAlias keyAliasValue
+            keyPassword keyPassValue
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def file = output.outputFile
+                    output.outputFile = new File(file.parent, file.name)
+                }
+            }
+        }
+    }
+
 
     buildTypes {
         release {
