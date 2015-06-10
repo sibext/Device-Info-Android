@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/Users/moskvin/src/android/Device-Info-Android-gradle/app/src/main/res/values-sw600dp/took.xml -->
-    <eat-comment/>
-    <string name="resource_dirictory">sw600dp</string>
-</resources>
