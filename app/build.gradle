@@ -3,7 +3,7 @@ apply plugin: "maven-publish"
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    buildToolsVersion "20.0.0"
 
     defaultConfig {
         applicationId "com.sibext.deviceinfo"
