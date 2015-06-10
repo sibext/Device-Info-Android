@@ -4,7 +4,7 @@
 	<string name="app_chooser_title">Общий доступ через:</string>
 	
 	<string name="id_title">Серийный номер устройства:</string>
-	<string name="mac_adress_title">Макадрес устройства:</string>
+	<string name="mac_address_title">Макадрес устройства:</string>
 	<string name="android_id_title">AndrodId устройства:</string>
 	<string name="gps_title">Поддержка gps:</string>
 		

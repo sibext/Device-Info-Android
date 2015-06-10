@@ -145,7 +145,7 @@ public class MainActivity extends Activity {
         ImageButton button = (ImageButton) frameMacAdress
                 .findViewById(R.id.item_button);
 
-        titlev.setText(R.string.mac_adress_title);
+        titlev.setText(R.string.mac_address_title);
 
         final String value = SystemHelper.getMacAdress(this);
         valuev.setText(value);
@@ -290,7 +290,7 @@ public class MainActivity extends Activity {
         } else {
             sb.append("UNKNOWN. Density is ").append(value);
         }
-        sb.append("\nResource directory = ").append(getString(R.string.resource_dirictory));
+        sb.append("\nResource directory = ").append(getString(R.string.resource_directory));
 
         int width = display.getWidth();
         int height = display.getHeight();

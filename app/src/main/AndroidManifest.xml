@@ -21,8 +21,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/di"
-        android:label="@string/di"
-        android:debuggable="false">
+        android:label="@string/di">
         <meta-data
             android:name="recipient_address"
             android:value="android@sibext.com" />
