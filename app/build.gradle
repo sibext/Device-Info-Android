@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: "maven-publish"
 
 android {
     compileSdkVersion 22
@@ -8,6 +9,8 @@ android {
         applicationId "com.sibext.deviceinfo"
         minSdkVersion 12
         targetSdkVersion 22
+        versionCode 7
+        versionName '1.0.4'
     }
     signingConfigs {
         release {
